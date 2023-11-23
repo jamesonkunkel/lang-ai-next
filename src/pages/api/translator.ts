@@ -68,7 +68,7 @@ const verbSchema = {
                 },
                 required: ["yo", "tu", "el", "nosotros", "vosotros", "ellos"],
               },
-              imperfect_past: {
+              imperfect: {
                 type: "object",
                 description:
                   "The conjugations of the verb in the imperfect past tense",
@@ -97,7 +97,7 @@ const verbSchema = {
                 required: ["yo", "tu", "el", "nosotros", "vosotros", "ellos"],
               },
             },
-            required: ["present", "imperfect_past", "preterite"],
+            required: ["present", "imperfect", "preterite"],
           },
         },
         required: ["infinitive", "conjugations"],
