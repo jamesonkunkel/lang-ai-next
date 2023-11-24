@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import OpenAI from "openai";
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: process.env.API_KEY,
 });
 
 const verbSchema = {
