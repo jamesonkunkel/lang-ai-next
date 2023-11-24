@@ -18,3 +18,4 @@ Finally, launch the development environment,
 ```bash
 npm run dev
 ```
+<img width="1790" alt="Screenshot 2023-11-23 at 10 06 16 PM" src="https://github.com/jamesonkunkel/lang-ai-next/assets/125910845/4f4c2d1f-5796-47ae-851e-f4bdc4b642e4">
