@@ -21,10 +21,9 @@ const getTranslation = async (prompt: string) => {
 
 function PromptBox() {
   //store selector
-  const [translation, setTranslation] = useTranslationStore((state) => [
-    state.translation,
-    state.setTranslation,
-  ]);
+  const [setTranslation, setTranslationIsLoading] = useTranslationStore(
+    (state) => [state.setTranslation, state.setTranslationIsLoading]
+  );
 
   //component state
   const [prompt, setPrompt] = useState<string>("");
@@ -32,7 +31,9 @@ function PromptBox() {
   const handleSubmit = async () => {
     if (prompt === "") return;
 
+    setTranslationIsLoading(true);
     const response = await getTranslation(prompt);
+    setTranslationIsLoading(false);
 
     if (response.success) {
       setTranslation(response.translation);
@@ -52,7 +53,7 @@ function PromptBox() {
           onChange={(e) => setPrompt(e.target.value)}
         />
         <button onClick={handleSubmit} className="btn btn-success">
-          Submit
+          Translate
         </button>
       </div>
     </div>

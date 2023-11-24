@@ -6,6 +6,8 @@ import useTranslationStore from "@/stores/translationStore";
 
 //import components
 import NounCard from "./NounCard";
+
+//import assets
 import ChevronUp from "@/assets/ChevronUp";
 import ChevronDown from "@/assets/ChevronDown";
 

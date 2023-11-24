@@ -125,7 +125,7 @@ export default async function handler(
       {
         role: "system",
         content:
-          "You are a helpful assistant. You provide the parameters required in the schema you are given in JSON format. You translate a spanish sentence, identify the verbs in it and then provide the parameters in the verb schema.",
+          "You are a helpful assistant. You provide the parameters required in the schema you are given in JSON format. You translate a spanish sentence, identify the verbs in it and then provide the parameters in the verb schema. If you encounter the same verb written with a different conjugation, you can use the same verb object and just add the new conjugation. Similarily, if you encounter the same noun more than once, you can use the same noun object rather than creating a new one.",
       },
       {
         role: "user",
