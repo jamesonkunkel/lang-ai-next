@@ -10,7 +10,9 @@ function VerbCard({ verb }: Props) {
   return (
     <div className="card w-full bg-base-100 shadow-xl px-4 py-4">
       <div className="card-body">
-        <h2 className="card-title">{verb.infinitive}</h2>
+        <h2 className="card-title">
+          {verb.infinitive} - {verb.translation}
+        </h2>
       </div>
 
       {/* present conjugations */}

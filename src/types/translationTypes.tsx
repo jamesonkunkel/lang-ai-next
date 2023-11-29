@@ -19,17 +19,18 @@ export interface VerbConjugationsObject {
 
 export interface VerbObject {
   infinitive: string;
+  translation: string;
   conjugations: VerbConjugationsObject;
 }
 
 export interface TranslationObject {
-  sentence?: string;
-  translatedSentence?: string;
-  nouns?: NounObject[];
-  verbs?: VerbObject[];
+  sentence: string;
+  translatedSentence: string;
+  nouns: NounObject[];
+  verbs: VerbObject[];
 }
 
 export interface TranslationResponseObject {
   success: boolean;
-  translation?: any;
+  translation: TranslationObject | null;
 }
