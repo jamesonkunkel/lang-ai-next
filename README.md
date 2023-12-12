@@ -1,4 +1,4 @@
-This is a simple demo using the OpenAI API's function-calling feature to translate plain text English into its Spanish translation while extracting each noun and verb individually for translation and conjugation. The demo was built using NextJS and includes calls to the OpenAI API through the builtin NextJS API layer. Feel free to try setting up the demo on your machine to experiment with the function call feature in the OpenAI API.
+This is a simple demo using the OpenAI API's function-calling feature to translate plain text English into its Spanish translation while extracting each noun and verb individually for translation and conjugation. The demo was built using NextJS and includes calls to the OpenAI API through the builtin NextJS API layer. Feel free to try setting up the demo on your machine to experiment with the function call feature in the OpenAI API. I wrote an article about this project on DEV.to [here](https://dev.to/jamesonkunkel/building-an-ai-translation-app-with-nextjs-by-extracting-json-from-openais-api-2nd7).
 
 ## Setting Up The Demo (Example Using NPM)
 First, install all project dependencies. 
